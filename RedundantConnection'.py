@@ -47,4 +47,4 @@ class Solution(object):
 
 if __name__ == '__main__':
     f = Solution()
-    print(f.findRedundantConnection([[1,2], [1,3], [2,3]]))
+    print(f.findRedundantConnection([[1,2], [2,3], [3,4], [1,4], [1,5]]))

@@ -83,3 +83,10 @@ class Solution(object):
                         queue.append((word, level + 1))
                 all_combo_dict[intermediate_word] = []
         return 0
+
+if __name__ == '__main__':
+    f = Solution()
+    begin = "hit"
+    end = "cog"
+    wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
+    print(f.ladderLength(begin, end, wordList))

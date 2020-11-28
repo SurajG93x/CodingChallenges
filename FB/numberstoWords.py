@@ -14,8 +14,8 @@ class Solution:
             if n < 1000:
                 return [to19[n // 100 - 1]] + ["Hundred"] + toWords(n % 100)
             for i, p in enumerate(("Thousand", "Million", "Billion"), 1):
-                if n < 1000 ** (i + 1):
-                    return toWords(n // 1000 ** i) + [p] + toWords(n % 1000 ** i)
+                    if n < 1000 ** (i + 1):
+                        return toWords(n // 1000 ** i) + [p] + toWords(n % 1000 ** i)
 
         return 'Zero' if num == 0 else ' '.join(toWords(num))
 

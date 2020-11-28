@@ -9,14 +9,6 @@ class Solution:
         for i,val in enumerate(points):
             distlist.append(ed(val[0],val[1]))
 
-        list1 = ["a", "b", "c"]
-        list2 = [2, 3, 1]
-
-        zipped_lists = zip(list2, list1)
-
-        sorted_zipped_lists = sorted(zipped_lists)
-        sorted_list1 = [element for _, element in sorted_zipped_lists]
-
         sortedpts = [points for _, points in sorted(zip(distlist, points))]
 
         for j in range(0,K):

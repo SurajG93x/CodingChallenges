@@ -14,4 +14,4 @@ class Solution(object):
 
 if __name__ == '__main__':
     f = Solution()
-    print(f.validPalindrome("abcdfcba"))
+    print(f.validPalindrome("abcdedfcba"))
